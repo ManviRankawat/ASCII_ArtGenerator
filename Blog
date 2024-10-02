@@ -1,8 +1,8 @@
 Problem Domain and Project Description
-The goal of this project is to develop an ASCII Art Generator that converts digital images into text-based visual representations. 
+The goal of Project2 of Computer Vision_CSCI_6527_10 is to develop an ASCII Art Generator that converts digital images into text-based visual representations. 
 ASCII art replaces pixel intensity with characters that have varying densities, where darker areas are mapped to denser characters (such as @ or #) and lighter areas to less dense ones (like , or .). 
 This transformation allows for a creative, low-resolution rendering of images using only textual characters.
-The primary inputs of the system are image files (in standard formats such as .jpg, .png, etc.), and the output is a text file containing the ASCII representation of the image. 
+The primary inputs of the system are image files (in standard formats which in our case is .jpg), and the output is a text file containing the ASCII representation of the image. 
 For example, an input could be a photograph of the Mona Lisa, and the output would be a text file with ASCII characters arranged to resemble the painting. 
 This tool is valuable to artists who enjoy creating retro or minimalist artwork, and for developers seeking lightweight visual representations in environments with text-only display constraints, such as command-line interfaces.
 
@@ -17,9 +17,10 @@ Datasets and Challenges
 Took Painting references as I feel this could be useful for beginners in art-world to refers to ASCII characters and consider painting based on ASCII characters as in which part could be dark or light on facial features.
 Dataset of Painting of Mona Lisa, George Washington, Girl with a Pearl Earing and Indian Prime Minister Mr. Narendra Modi is pulled.
 Images with high contrast tend to work better, as the ASCII characters can more easily represent these differences.
+Apart from which I experimented the ASCII image with varying height and width of 40, 60 & 100 and as a result observed that the Image with high size-range has more clarity which is the same case as more the pixel better is the clarity.
 Maintaining the correct aspect ratio is important so that the ASCII art doesn't become distorted. This is handled by adjusting the height-to-width ratio of the resized image.
 
-Results
+Results (Refer ASCII_ArtGenerator.ipynb file)
 The results are surprisingly effective for simple, high-contrast images like portraits, logos, or famous artworks (e.g., Mona Lisa or Girl with a Pearl Earring). 
 When compared to alternative approaches (e.g., using more complex graphical algorithms for ASCII art), this method achieves a balance between simplicity and visual quality. 
 It is effective for text-based environments but could struggle with more complex, color-rich images.
